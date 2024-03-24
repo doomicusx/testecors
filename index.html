@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Bodymovin Demo</title>
+  
+  <!--  Styles  -->
+ <style>
+  #bm {
+    width: 100%;
+    height: 100%;
+  }
+ </style>
+ <script src="lottie.js"></script>
+ <script src="index.js"></script>
+</head>
+<body>
+  
+  <div id="lottie"></div>
+
+  
+
+ <script>
+  var params = {
+  container: document.getElementById("lottie"),
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: 'data.json'
+
+};
+
+var anim;
+
+anim = lottie.loadAnimation(params);
+ </script>
+</body>
+</html>
